@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #aaa;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal{
+  display: grid;
+  grid-template-columns: repeat(3,1fr) 45px;
+  grid-template-areas:
+  "icon header header close"
+  "text text text text"
+  "continue cancel - -"
+  
+  ;
+  gap: 15px;
+  padding: 15px;
+  background-color: white;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 15px rgba(0,0,0,0.2);
+}
+
+.icon{
+  grid-area: icon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close-button{
+  grid-area: close;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+button.continue{
+  grid-area: continue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button.continue:hover{
+  background-color: black;
+  color: #fff;
+}
+
+button.cancel{
+  grid-area: cancel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button.cancel:hover{
+  background-color: #333;
+  color: #fff;
+}
+/* body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #aaa;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.icon, .header, .close-button, .text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  color: royalblue;
+  font-size: 24px;
+  font-weight: 700;
+  background: lavender;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  /* Ajuste para centrar el icono verticalmente */
+  /* justify-content: center;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.close-button {
+  background: #eee;
+  border-radius: 50%;
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  height: 24px;
+  width: 24px;
+  /* Ajuste para centrar el botón verticalmente */
+  /* justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+button { */
+  /* padding: 10px 20px; /* Ajustado para que todos los botones tengan el mismo tamaño */
+  /* border-radius: 5px;
+  cursor: pointer; */
+/* } */
+
+/* .text {
+  font-size: 14px;
+} */
+
+/* Botón Continuar alineado a la izquierda */
+/* button.continue {
+  background: royalblue;
+  border: 1px solid royalblue;
+  color: white;
+  align-self: flex-start; /* Alineado a la izquierda */
+
+
+/* button.cancel {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  color: royalblue;
+} */

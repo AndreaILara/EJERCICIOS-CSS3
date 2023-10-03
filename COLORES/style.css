@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body{
+  font-family: 'Caveat', cursive;
+}
+h1{
+  color: #c92a2a;
+}
+h2{
+  color: #a61e4d;
+}
+.first, .second{
+  color: #364fc7;
+}
+.second{
+  border-bottom: solid 1px #c92a2a;
+}
+/* Utilizaremos border-bottom para poner una linea diferenciadora en CSS */
